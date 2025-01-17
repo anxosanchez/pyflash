@@ -29,8 +29,8 @@ The ideal tool to fuse these theoretical and numerical aspects into the teaching
 
 **The learning path proposed for this topic in this article is structured according to a traditional scheme in the teaching of thermodynamics in chemical engineering \[**17**\]. The principal theoretical concepts explained about multi-component phase equilibrium are:**
 
-- **Lever Rule**
-- **Raoult’s Law and VLE**
+- [**Lever Rule**](https://eng.libretexts.org/Bookshelves/Materials_Science/TLP_Library_II/12%3A_Phase_Diagrams_and_Solidification/12.7%3A_The_Lever_Rule)
+- [**Raoult’s Law and VLE**](https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Equilibria/Physical_Equilibria/Raoults_Law_and_Ideal_Mixtures_of_Liquids)
 - **Flash Separations**
 - **Partial Molar Quantities**
 - **Fugacities of Mixtures**
