@@ -1,1 +1,59 @@
+## Vapor pressure 
+It is the pressure exerted by a vapor in equilibrium with its liquid (or solid) phase at a given temperature. It indicates how easily a substance can evaporate. The higher the vapor pressure, the more volatile the substance.
 
+In vapor-liquid equilibrium (VLE), the rates of evaporation and condensation are equal, meaning the amount of liquid and vapor remains constant over time. This equilibrium is crucial in many chemical engineering processes, such as distillation, where components of a mixture are separated based on their different volatilities.
+
+In chemical engineering, understanding vapor pressure helps in:
+- Designing separation processes like distillation and extraction.
+- Predicting phase behavior in mixtures.
+- Ensuring safety by managing the risks of high vapor pressure substances, which can be flammable or toxic.
+
+### Factors influence vapor pressure:
+
+- Temperature: as temperature increases, vapor pressure increases because more molecules have enough energy to escape the liquid phase.  
+- Nature of the Liquid: substances with weaker intermolecular forces (like **van der Waals** forces) have higher vapor pressures.
+- Molecular Weight: Generally, lighter molecules evaporate more easily, leading to higher vapor pressures.
+- Presence of non-volatile Solutes: adding a non-volatile solute (like salt in water) lowers the vapor pressure of the solvent.
+- Surface Area: While surface area doesn't affect the vapor pressure itself, it can influence the rate at which equilibrium is reached.
+
+### Vapor pressure calculation for a pure liquid
+
+To calculate the vapor pressure of a pure liquid, we can use the **Clausius-Clapeyron equation**, which relates the vapor pressure and temperature of a substance. The equation is:
+  
+$$
+\ln \left ( \frac { p_2 }  { p_1 }  \right ) = - \frac { \Delta H_{vap} }  { R } \left ( \frac { 1 }  { T_2 } - \frac { 1 }  { T_1 } \right )
+$$
+  
+Where:
+
+$p_1$ and $p_2$ are the vapor pressures at temperatures $T_1$ and $T_2$ respectively.
+$\Delta H_{vap}$ is the enthalpy of vaporization of the substance.
+$R$ is the universal gas constant (8.314 J·mol<sup>-1</sup>·K<sup>-1</sup> in the SI).
+$T_1$ and $T_2$ are the absolute temperatures (in Kelvin).
+
+For a more straightforward calculation at a single temperature, the Antoine equation is often used:
+  
+$$
+\log_10 p = A - \frac {B} { C + T } 
+$$
+  
+where:
+$P$ is the vapor pressure.
+$T$ is the temperature (in a corresponding unit).
+$A$, $B$, and $C$ are substance-specific constants (Antoine constants).
+
+These constants can be found in literature or chemical databases for various substances. But you have to be aware of the units of pressure and temperature, and the type of logarith, because this is an empirical equation and constant changes among databases.
+
+Other alternative should be The DIPPR (Design Institute for Physical Properties) database, which provides reliable physical property data for chemical engineering applications. One of these equations is DIPPR for calculating vapor pressure (DIPPR 101 equation):
+  
+$$
+\ln \left ( \frac { p } { p_0 } \right ) = A + \frac { B } { T } + C \ln ( T ) + D T^E
+$$
+  
+Where:
+$p$ is the vapor pressure.
+$p_0$ is a reference pressure (often 1 kPa).
+$T$ is the absolute temperature (in Kelvin).
+$A$, $B$, $C$, $D$, and $E$ are substance-specific constants.
+
+These constants are determined through regression analysis of experimental data and are available in the [DIPPR database](https://trc.nist.gov/TDE/Help/TDE103b/Single-Property_Equations/Single-Property_Equations_and_Predictions_%28Pures%29/Vapor_Pressure/DIPPR101.htm).
